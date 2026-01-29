@@ -1,49 +1,53 @@
-<!-- PROJECT BANNER -->
-<h1 align="center">🚀 Cloud Web Deployment Using Ansible</h1>
-<h3 align="center">Automating Cloud Infrastructure & Web Deployment</h3>
+<!-- BIG BANNER -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=Cloud%20Deployment%20Using%20Ansible&fontSize=45&fontColor=ffffff&animation=fadeIn" />
+</p>
 
 ---
 
-## 🧑‍💻 Author
+<h1 align="center">🚀 Automated Cloud Web Deployment</h1>
+<h3 align="center">AWS EC2 + Ansible + Nginx + HTML Deployment</h3>
 
-**Arkan Tandel**  
-📍 Pune, India  
-📧 arkantandel@gmail.com  
+---
+
+## 👨‍💻 Author
+
+| Name | Role | Location |
+|---|---|---|
+| **Arkan Tandel** | DevOps Engineer (Fresher) | Pune, India |
+
+📧 Email: arkantandel@gmail.com  
 🔗 LinkedIn: https://linkedin.com/in/arkantandel  
 🔗 GitHub: https://github.com/arkantandel  
 
 ---
 
-## 🏷 Project Badges
+## 🏷 Tech Stack Badges
 
-![AWS](https://img.shields.io/badge/Cloud-AWS-orange)
-![Ansible](https://img.shields.io/badge/Automation-Ansible-red)
-![Linux](https://img.shields.io/badge/OS-Linux-yellow)
-![Nginx](https://img.shields.io/badge/WebServer-Nginx-green)
-![DevOps](https://img.shields.io/badge/Domain-DevOps-blue)
+![AWS](https://img.shields.io/badge/Cloud-AWS-orange?style=for-the-badge)
+![Ansible](https://img.shields.io/badge/Automation-Ansible-red?style=for-the-badge)
+![Linux](https://img.shields.io/badge/OS-Linux-yellow?style=for-the-badge)
+![Nginx](https://img.shields.io/badge/WebServer-Nginx-green?style=for-the-badge)
+![DevOps](https://img.shields.io/badge/Domain-DevOps-blue?style=for-the-badge)
 
 ---
 
 # 🌟 Project Overview
 
-This project demonstrates **Real World DevOps Cloud Deployment** using:
+This project demonstrates **Real World DevOps Cloud Automation** using:
 
-- ☁ AWS EC2 Cloud Server  
-- ⚙ Ansible Automation Tool  
-- 🌐 Nginx Web Server  
-- 📄 HTML Website Deployment  
-
-This project simulates how DevOps engineers deploy web applications automatically in production environments.
+✅ AWS EC2 Cloud Infrastructure  
+✅ Ansible Configuration Management  
+✅ Nginx Web Server Automation  
+✅ HTML Website Deployment  
 
 ---
 
-# 🧠 Key DevOps Concepts Used
+# 🎬 Project Demo GIF (Optional Add Later)
 
-✔ Infrastructure as Code  
-✔ Configuration Management  
-✔ Cloud Automation  
-✔ Web Deployment Automation  
-✔ Remote Server Management  
+```
+(Add your deployment GIF here later)
+```
 
 ---
 
@@ -54,8 +58,8 @@ flowchart LR
     A[Developer Laptop] --> B[Ansible Control Node]
     B --> C[AWS EC2 Instance]
     C --> D[Nginx Web Server]
-    D --> E[Website HTML Page]
-    E --> F[End Users Browser]
+    D --> E[HTML Website]
+    E --> F[User Browser]
 ```
 
 ---
@@ -72,52 +76,45 @@ flowchart TD
 
 ---
 
-# ⚙️ Installation & Setup
+# ⚙️ Installation Steps
 
 ---
 
-## 🖥 Step 1 — Update System
+## 🖥 Update System
 ```bash
 sudo apt update -y
 ```
 
-👉 Updates system package repository.
-
 ---
 
-## ⚙ Step 2 — Install Ansible
+## ⚙ Install Ansible
 ```bash
 sudo apt install ansible -y
 ```
 
-👉 Installs automation engine.
-
 ---
 
-# ☁ Step 3 — Create AWS EC2
+# ☁ AWS EC2 Setup
 
-### Configure:
+Create Instance:
 
 - Ubuntu Server  
-- Allow SSH (22)  
-- Allow HTTP (80)  
+- Open Port 22 (SSH)  
+- Open Port 80 (HTTP)  
 
 ---
 
-# 🔐 Step 4 — Setup SSH Access
+# 🔐 SSH Access
 
 ```bash
 chmod 400 key.pem
 ssh -i key.pem ubuntu@SERVER_IP
 ```
 
-👉 Secure connection to cloud server.
-
 ---
 
-# 📄 Step 5 — Create Inventory File
+# 📄 Inventory Configuration
 
-### inventory.ini
 ```ini
 [production]
 server1 ansible_host=YOUR_SERVER_IP ansible_user=ubuntu
@@ -125,9 +122,8 @@ server1 ansible_host=YOUR_SERVER_IP ansible_user=ubuntu
 
 ---
 
-# 📄 Step 6 — Create Deployment Playbook
+# 📄 Deployment Playbook
 
-### deploy.yml
 ```yaml
 ---
 - name: Configure Nginx Web Server
@@ -156,16 +152,15 @@ server1 ansible_host=YOUR_SERVER_IP ansible_user=ubuntu
 
 ---
 
-# 📄 Step 7 — Create Website File
+# 📄 Website File
 
-### index.html
 ```html
-<h1>🚀 Website Deployed Using Ansible Automation</h1>
+<h1>🚀 Website Deployed Using Ansible</h1>
 ```
 
 ---
 
-# 🚀 Step 8 — Run Deployment
+# 🚀 Deployment Command
 
 ```bash
 ansible-playbook -i inventory.ini deploy.yml
@@ -173,9 +168,7 @@ ansible-playbook -i inventory.ini deploy.yml
 
 ---
 
-# 🌐 Verify Deployment
-
-Open in browser:
+# 🌐 Access Website
 
 ```
 http://SERVER_IP
@@ -183,26 +176,36 @@ http://SERVER_IP
 
 ---
 
-# 📚 Learning Roadmap
+# 📚 DevOps Learning Path
 
 ```mermaid
 flowchart LR
-    A[Linux Basics] --> B[Networking Basics]
-    B --> C[AWS Cloud Basics]
-    C --> D[Ansible Automation]
-    D --> E[CI/CD Pipelines]
-    E --> F[Terraform IaC]
+    A[Linux Basics] --> B[Networking]
+    B --> C[AWS Cloud]
+    C --> D[Ansible]
+    D --> E[CI/CD]
+    E --> F[Terraform]
 ```
 
 ---
 
-# 🎯 Benefits of This Project
+# 🎯 Benefits
 
-✅ Real Industry DevOps Workflow  
-✅ Hands-on Cloud Experience  
-✅ Automation Skills  
-✅ Resume Strong Project  
-✅ GitHub Portfolio Enhancement  
+✅ Industry Level Automation Experience  
+✅ Cloud Hands-on Experience  
+✅ DevOps Real Workflow  
+✅ Strong Resume Project  
+✅ GitHub Portfolio Project  
+
+---
+
+# 🔥 Future Enhancements
+
+- CI/CD Pipeline Integration  
+- Docker Container Deployment  
+- Terraform Infrastructure Automation  
+- Multi Server Deployment  
+- Ansible Roles Implementation  
 
 ---
 
@@ -212,27 +215,15 @@ flowchart LR
 
 ---
 
-# 🔥 Future Enhancements
+# ❤️ DevOps Quote
 
-- CI/CD Integration  
-- Multi Server Deployment  
-- Ansible Roles Implementation  
-- Terraform + Ansible Integration  
-- Docker Deployment  
+> "Automation is not optional. It is survival in modern infrastructure."
 
 ---
 
-# ❤️ DevOps Philosophy
+<!-- FOOTER BANNER -->
 
-> Automate Everything.  
-> Reduce Manual Errors.  
-> Scale Infrastructure Easily.  
-
----
-
-# ⭐ Final Summary
-
-This project demonstrates real-world cloud automation using Ansible to deploy and configure web infrastructure efficiently and reliably.
-
----
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer"/>
+</p>
 
