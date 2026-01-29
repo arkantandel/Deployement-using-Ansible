@@ -41,15 +41,7 @@ This project demonstrates **Real World DevOps Cloud Automation** using:
 ✅ Nginx Web Server Automation  
 ✅ HTML Website Deployment  
 
----
 
-# 🎬 Project Demo GIF (Optional Add Later)
-
-```
-(Add your deployment GIF here later)
-```
-
----
 
 # 🏗️ Architecture Diagram
 
